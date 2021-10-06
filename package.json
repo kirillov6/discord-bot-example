@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "tsc": "tsc",
+    "tsc": "./node_modules/typescript/bin/tsc",
     "clean": "rm -Rf ./_build",
-    "build": "npm run clean && npm run tsc && cp ./config.json ./_build/config.json",
+    "build": "npm run clean && tsc && cp ./config.json ./_build/config.json",
     "start": "npm run build && node ./_build/bot.js"
   },
   "keywords": [],
