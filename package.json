@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "tsc": "./node_modules/typescript/bin/tsc",
     "clean": "rm -Rf ./_build",
     "build": "npm run clean && tsc && cp ./config.json ./_build/config.json",
     "start": "npm run build && node ./_build/bot.js"
@@ -15,11 +14,11 @@
   "dependencies": {
     "@typeit/discord": "^4.0.10",
     "discord.js": "^13.1.0",
-    "dotenv": "^10.0.0"
+    "dotenv": "^10.0.0",
+    "typescript": "^4.4.3"
   },
   "devDependencies": {
     "@types/node": "^16.10.2",
-    "tslib": "^2.3.1",
-    "typescript": "^4.4.3"
+    "tslib": "^2.3.1"
   }
 }
